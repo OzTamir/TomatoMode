@@ -6,6 +6,8 @@
 //  Copyright (c) 2014 Oz Tamir. All rights reserved.
 //
 
+// TODO: Rename this file to 'TimerViewController'
+
 import Foundation
 import UIKit
 import QuartzCore
@@ -39,10 +41,9 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         
         // Setup frames for each subview
         let progFrame = CGRectMake(50.0, self.view.bounds.size.height / 4 , self.view.bounds.size.width - 100, self.view.bounds.size.width - 100)
-        
         let remainingFrame = CGRectMake(0, 20 + self.view.bounds.size.width, self.view.bounds.size.width, self.view.bounds.size.height / 4)
-        
         let menuBtnFrame = CGRectMake(0, 20, 50, 50)
+        let exitBtnFrame = CGRectMake(self.view.bounds.size.width - 50, 20, 50, 50)
         
         
         // Add the counter
@@ -62,27 +63,35 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         self.remainLabel = remainLabel
         self.view.addSubview(self.remainLabel)
         
+        // Add menu button
         let menuButtonIcon = FAKIonIcons.naviconRoundIconWithSize(35.0)
         let menuButtonImg = menuButtonIcon.imageWithSize(CGSizeMake(35,35))
         let button = UIButton.buttonWithType(UIButtonType.System) as UIButton
         button.frame = menuBtnFrame
         button.setImage(menuButtonImg, forState: UIControlState.Normal)
-        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        button.addTarget(self, action: "menuButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(button)
+        
+        // Add exit button
+        let exitButtonIcon = FAKIonIcons.logOutIconWithSize(35.0)
+        let exitButtonImg = exitButtonIcon.imageWithSize(CGSizeMake(35,35))
+        let exitButton = UIButton.buttonWithType(UIButtonType.System) as UIButton
+        exitButton.frame = exitBtnFrame
+        exitButton.setImage(exitButtonImg, forState: UIControlState.Normal)
+        exitButton.addTarget(self, action: "exitButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(exitButton)
         
         // Setup Icons for the sidebar
         let startIcon = FAKIonIcons.playIconWithSize(70.0)
         let pauseIcon = FAKIonIcons.pauseIconWithSize(70.0)
         let resetIcon = FAKIonIcons.refreshIconWithSize(70.0)
-        let settingsIcon = FAKIonIcons.gearAIconWithSize(70.0)
         
         let startImg = startIcon.imageWithSize(CGSizeMake(70,70))
         let pauseImg = pauseIcon.imageWithSize(CGSizeMake(70,70))
         let resetImg = resetIcon.imageWithSize(CGSizeMake(70,70))
-        let settingImg = settingsIcon.imageWithSize(CGSizeMake(70,70))
         
         // Setup the sidebar
-        let imgs = [startImg, pauseImg, resetImg, settingImg]
+        let imgs = [startImg, pauseImg, resetImg]
         let sideMenu = RNFrostedSidebar(images: imgs)
         sideMenu.delegate = self
         self.sideMenu = sideMenu
@@ -90,8 +99,12 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         
     }
     
-    func buttonAction(sender:UIButton!)
-    {
+    func exitButtonAction(sender:UIButton!){
+        //TODO: Actually quit
+        println("I'm out")
+    }
+    
+    func menuButtonAction(sender:UIButton!){
         self.sideMenu.show()
     }
     
