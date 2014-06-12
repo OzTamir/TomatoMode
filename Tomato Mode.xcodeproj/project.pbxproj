@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F40194992C30096D21E /* AppDelegate.swift */; };
+		F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */; };
+		F5B26F46194992C30096D21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B26F45194992C30096D21E /* Images.xcassets */; };
+		F5B26F52194992C30096D21E /* Tomato_ModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F51194992C30096D21E /* Tomato_ModeTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5B26F4C194992C30096D21E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5B26F33194992C30096D21E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5B26F3A194992C30096D21E;
+			remoteInfo = "Tomato Mode";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F5B26F3B194992C30096D21E /* Tomato Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B26F3F194992C30096D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B26F40194992C30096D21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F5B26F43194992C30096D21E /* Tomato_Mode.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Tomato_Mode.xcdatamodel; sourceTree = "<group>"; };
+		F5B26F45194992C30096D21E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5B26F4B194992C30096D21E /* Tomato ModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tomato ModeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5B26F50194992C30096D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5B26F51194992C30096D21E /* Tomato_ModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomato_ModeTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5B26F38194992C30096D21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B26F48194992C30096D21E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5B26F32194992C30096D21E = {
+			isa = PBXGroup;
+			children = (
+				F5B26F3D194992C30096D21E /* Tomato Mode */,
+				F5B26F4E194992C30096D21E /* Tomato ModeTests */,
+				F5B26F3C194992C30096D21E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5B26F3C194992C30096D21E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5B26F3B194992C30096D21E /* Tomato Mode.app */,
+				F5B26F4B194992C30096D21E /* Tomato ModeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5B26F3D194992C30096D21E /* Tomato Mode */ = {
+			isa = PBXGroup;
+			children = (
+				F5B26F40194992C30096D21E /* AppDelegate.swift */,
+				F5B26F45194992C30096D21E /* Images.xcassets */,
+				F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */,
+				F5B26F3E194992C30096D21E /* Supporting Files */,
+			);
+			path = "Tomato Mode";
+			sourceTree = "<group>";
+		};
+		F5B26F3E194992C30096D21E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B26F3F194992C30096D21E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5B26F4E194992C30096D21E /* Tomato ModeTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5B26F51194992C30096D21E /* Tomato_ModeTests.swift */,
+				F5B26F4F194992C30096D21E /* Supporting Files */,
+			);
+			path = "Tomato ModeTests";
+			sourceTree = "<group>";
+		};
+		F5B26F4F194992C30096D21E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5B26F50194992C30096D21E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5B26F3A194992C30096D21E /* Tomato Mode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B26F55194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato Mode" */;
+			buildPhases = (
+				F5B26F37194992C30096D21E /* Sources */,
+				F5B26F38194992C30096D21E /* Frameworks */,
+				F5B26F39194992C30096D21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tomato Mode";
+			productName = "Tomato Mode";
+			productReference = F5B26F3B194992C30096D21E /* Tomato Mode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5B26F4A194992C30096D21E /* Tomato ModeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5B26F58194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato ModeTests" */;
+			buildPhases = (
+				F5B26F47194992C30096D21E /* Sources */,
+				F5B26F48194992C30096D21E /* Frameworks */,
+				F5B26F49194992C30096D21E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5B26F4D194992C30096D21E /* PBXTargetDependency */,
+			);
+			name = "Tomato ModeTests";
+			productName = "Tomato ModeTests";
+			productReference = F5B26F4B194992C30096D21E /* Tomato ModeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5B26F33194992C30096D21E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Oz Tamir";
+				TargetAttributes = {
+					F5B26F3A194992C30096D21E = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					F5B26F4A194992C30096D21E = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = F5B26F3A194992C30096D21E;
+					};
+				};
+			};
+			buildConfigurationList = F5B26F36194992C30096D21E /* Build configuration list for PBXProject "Tomato Mode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5B26F32194992C30096D21E;
+			productRefGroup = F5B26F3C194992C30096D21E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5B26F3A194992C30096D21E /* Tomato Mode */,
+				F5B26F4A194992C30096D21E /* Tomato ModeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5B26F39194992C30096D21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B26F46194992C30096D21E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B26F49194992C30096D21E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5B26F37194992C30096D21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */,
+				F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B26F47194992C30096D21E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5B26F52194992C30096D21E /* Tomato_ModeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5B26F4D194992C30096D21E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5B26F3A194992C30096D21E /* Tomato Mode */;
+			targetProxy = F5B26F4C194992C30096D21E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F5B26F53194992C30096D21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5B26F54194992C30096D21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5B26F56194992C30096D21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tomato Mode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F5B26F57194992C30096D21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = "Tomato Mode/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		F5B26F59194992C30096D21E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomato Mode.app/Tomato Mode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tomato ModeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		F5B26F5A194992C30096D21E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tomato Mode.app/Tomato Mode";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tomato ModeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5B26F36194992C30096D21E /* Build configuration list for PBXProject "Tomato Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B26F53194992C30096D21E /* Debug */,
+				F5B26F54194992C30096D21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5B26F55194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato Mode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B26F56194992C30096D21E /* Debug */,
+				F5B26F57194992C30096D21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F5B26F58194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato ModeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5B26F59194992C30096D21E /* Debug */,
+				F5B26F5A194992C30096D21E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5B26F43194992C30096D21E /* Tomato_Mode.xcdatamodel */,
+			);
+			currentVersion = F5B26F43194992C30096D21E /* Tomato_Mode.xcdatamodel */;
+			path = Tomato_Mode.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5B26F33194992C30096D21E /* Project object */;
+}
