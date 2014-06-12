@@ -8,12 +8,11 @@
 
 import Foundation
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFrostedSidebarDelegate  {
     
     var screenHeight: CGFloat = 0
-    //var tableView: UITableView!
-    //var progView: UAProgressView!
     var progView: SFRoundProgressCounterView!
     var remainLabel: UILabel!
     var sideMenu: RNFrostedSidebar!
@@ -27,7 +26,16 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.screenHeight = UIScreen.mainScreen().bounds.height
-        self.view.backgroundColor = UIColor.redColor()
+        
+        // Set gradient Backgorund
+        // TODO: Choose a final background and add ability to change it
+        let firstColor = UIColor(red: 0.85, green: 0.94, blue: 0.91, alpha: 1)
+        let secondColor = UIColor(red: 0.84, green: 0.95, blue: 0.95, alpha: 1)
+        
+        var gradient = CAGradientLayer()
+        gradient.colors = [firstColor.CGColor, secondColor.CGColor]
+        gradient.frame = self.view.bounds
+        self.view.layer.insertSublayer(gradient, atIndex: 0)
         
         // Setup frames for each subview
         let progFrame = CGRectMake(50.0, self.view.bounds.size.height / 4 , self.view.bounds.size.width - 100, self.view.bounds.size.width - 100)
