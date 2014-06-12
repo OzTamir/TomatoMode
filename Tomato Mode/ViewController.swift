@@ -9,13 +9,14 @@
 import Foundation
 import UIKit
 
-class ViewController: UIViewController, SFRoundProgressCounterViewDelegate  {
+class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFrostedSidebarDelegate  {
     
     var screenHeight: CGFloat = 0
     //var tableView: UITableView!
     //var progView: UAProgressView!
     var progView: SFRoundProgressCounterView!
     var remainLabel: UILabel!
+    var sideMenu: RNFrostedSidebar!
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
@@ -33,14 +34,10 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate  {
         
         let remainingFrame = CGRectMake(0, 20 + self.view.bounds.size.width, self.view.bounds.size.width, self.view.bounds.size.height / 4)
         
-        //let
+        let menuBtnFrame = CGRectMake(0, 20, 50, 50)
         
         
         // Add the counter
-//        let progView = UAProgressView(frame: progFrame)
-//        progView.setProgress(0.5, animated: true)
-//        self.progView = progView
-//        self.view.addSubview(self.progView)
         let progView = SFRoundProgressCounterView(frame: progFrame)
         progView.delegate = self
         var interval = 25.0 * 60000
@@ -57,17 +54,52 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate  {
         self.remainLabel = remainLabel
         self.view.addSubview(self.remainLabel)
         
+        let menuButtonIcon = FAKIonIcons.naviconRoundIconWithSize(35.0)
+        let menuButtonImg = menuButtonIcon.imageWithSize(CGSizeMake(35,35))
+        let button = UIButton.buttonWithType(UIButtonType.System) as UIButton
+        button.frame = menuBtnFrame
+        button.setImage(menuButtonImg, forState: UIControlState.Normal)
+        button.addTarget(self, action: "buttonAction:", forControlEvents: UIControlEvents.TouchUpInside)
+        self.view.addSubview(button)
+        
+        // Setup Icons for the sidebar
+        let startIcon = FAKIonIcons.playIconWithSize(70.0)
+        let pauseIcon = FAKIonIcons.pauseIconWithSize(70.0)
+        let resetIcon = FAKIonIcons.refreshIconWithSize(70.0)
+        let settingsIcon = FAKIonIcons.gearAIconWithSize(70.0)
+        
+        let startImg = startIcon.imageWithSize(CGSizeMake(70,70))
+        let pauseImg = pauseIcon.imageWithSize(CGSizeMake(70,70))
+        let resetImg = resetIcon.imageWithSize(CGSizeMake(70,70))
+        let settingImg = settingsIcon.imageWithSize(CGSizeMake(70,70))
+        
+        // Setup the sidebar
+        let imgs = [startImg, pauseImg, resetImg, settingImg]
+        let sideMenu = RNFrostedSidebar(images: imgs)
+        sideMenu.delegate = self
+        self.sideMenu = sideMenu
         
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    }
+    
+    func buttonAction(sender:UIButton!)
+    {
+        self.sideMenu.show()
+    }
+    
+    func sidebar(sidebar: RNFrostedSidebar!, didTapItemAtIndex index: Int){
+        switch index{
+        case 0:
+            self.progView.resume()
+        case 1:
+            self.progView.stop()
+        case 2:
+            self.progView.reset()
+        case 3:
+            println("Settings")
+        default:
+            println("Nothing to see here")
+        }
     }
         
 }
