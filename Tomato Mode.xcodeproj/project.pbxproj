@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C4077E5555C43098F02C66E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1860F2EB3C404D8DB3E4D1 /* libPods.a */; };
 		F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F40194992C30096D21E /* AppDelegate.swift */; };
 		F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */; };
 		F5B26F46194992C30096D21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B26F45194992C30096D21E /* Images.xcassets */; };
 		F5B26F52194992C30096D21E /* Tomato_ModeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F51194992C30096D21E /* Tomato_ModeTests.swift */; };
+		F5FB8D6A19499E6D007B4515 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5FB8D6919499E6D007B4515 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,6 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D85F1B0F764F44DC8BB45B1F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		F5B26F3B194992C30096D21E /* Tomato Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B26F3F194992C30096D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B26F40194992C30096D21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +35,9 @@
 		F5B26F4B194992C30096D21E /* Tomato ModeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tomato ModeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B26F50194992C30096D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B26F51194992C30096D21E /* Tomato_ModeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tomato_ModeTests.swift; sourceTree = "<group>"; };
+		F5FB8D6619499CE6007B4515 /* Tomato_Mode-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tomato_Mode-Bridging-Header.h"; sourceTree = "<group>"; };
+		F5FB8D6919499E6D007B4515 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA1860F2EB3C404D8DB3E4D1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C4077E5555C43098F02C66E /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,12 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C8117B0529474AF584AE11EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1860F2EB3C404D8DB3E4D1 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F5B26F32194992C30096D21E = {
 			isa = PBXGroup;
 			children = (
+				F5FB8D6619499CE6007B4515 /* Tomato_Mode-Bridging-Header.h */,
 				F5B26F3D194992C30096D21E /* Tomato Mode */,
 				F5B26F4E194992C30096D21E /* Tomato ModeTests */,
 				F5B26F3C194992C30096D21E /* Products */,
+				D85F1B0F764F44DC8BB45B1F /* Pods.xcconfig */,
+				C8117B0529474AF584AE11EC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				F5B26F40194992C30096D21E /* AppDelegate.swift */,
+				F5FB8D6919499E6D007B4515 /* ViewController.swift */,
 				F5B26F45194992C30096D21E /* Images.xcassets */,
 				F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */,
 				F5B26F3E194992C30096D21E /* Supporting Files */,
@@ -113,9 +132,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5B26F55194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato Mode" */;
 			buildPhases = (
+				B1E11F4ADF52447FBD063EF6 /* Check Pods Manifest.lock */,
 				F5B26F37194992C30096D21E /* Sources */,
 				F5B26F38194992C30096D21E /* Frameworks */,
 				F5B26F39194992C30096D21E /* Resources */,
+				D3BC00FF55FD4BB7976ACFFE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -198,11 +219,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		B1E11F4ADF52447FBD063EF6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D3BC00FF55FD4BB7976ACFFE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F5B26F37194992C30096D21E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5FB8D6A19499E6D007B4515 /* ViewController.swift in Sources */,
 				F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */,
 				F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */,
 			);
@@ -306,23 +361,27 @@
 		};
 		F5B26F56194992C30096D21E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85F1B0F764F44DC8BB45B1F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Tomato Mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/OzTamir/Documents/Programming/Xcode/Tomato Mode/Tomato Mode/Tomato_Mode-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		F5B26F57194992C30096D21E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D85F1B0F764F44DC8BB45B1F /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "Tomato Mode/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/OzTamir/Documents/Programming/Xcode/Tomato Mode/Tomato Mode/Tomato_Mode-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -381,6 +440,7 @@
 				F5B26F57194992C30096D21E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F5B26F58194992C30096D21E /* Build configuration list for PBXNativeTarget "Tomato ModeTests" */ = {
 			isa = XCConfigurationList;
@@ -389,6 +449,7 @@
 				F5B26F5A194992C30096D21E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
