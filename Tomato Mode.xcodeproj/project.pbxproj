@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9C4077E5555C43098F02C66E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1860F2EB3C404D8DB3E4D1 /* libPods.a */; };
+		F53590F9194AD21400CCD7D3 /* PastPeriodsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53590F8194AD21400CCD7D3 /* PastPeriodsView.swift */; };
 		F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F40194992C30096D21E /* AppDelegate.swift */; };
 		F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */; };
 		F5B26F46194992C30096D21E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5B26F45194992C30096D21E /* Images.xcassets */; };
@@ -27,6 +28,7 @@
 
 /* Begin PBXFileReference section */
 		D85F1B0F764F44DC8BB45B1F /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		F53590F8194AD21400CCD7D3 /* PastPeriodsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastPeriodsView.swift; sourceTree = "<group>"; };
 		F5B26F3B194992C30096D21E /* Tomato Mode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tomato Mode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5B26F3F194992C30096D21E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5B26F40194992C30096D21E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				F5B26F40194992C30096D21E /* AppDelegate.swift */,
 				F5FB8D6919499E6D007B4515 /* ViewController.swift */,
+				F53590F8194AD21400CCD7D3 /* PastPeriodsView.swift */,
 				F5B26F45194992C30096D21E /* Images.xcassets */,
 				F5B26F42194992C30096D21E /* Tomato_Mode.xcdatamodeld */,
 				F5B26F3E194992C30096D21E /* Supporting Files */,
@@ -259,6 +262,7 @@
 			files = (
 				F5FB8D6A19499E6D007B4515 /* ViewController.swift in Sources */,
 				F5B26F44194992C30096D21E /* Tomato_Mode.xcdatamodeld in Sources */,
+				F53590F9194AD21400CCD7D3 /* PastPeriodsView.swift in Sources */,
 				F5B26F41194992C30096D21E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

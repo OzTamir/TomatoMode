@@ -44,6 +44,8 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         let remainingFrame = CGRectMake(0, 20 + self.view.bounds.size.width, self.view.bounds.size.width, self.view.bounds.size.height / 4)
         let menuBtnFrame = CGRectMake(0, 20, 50, 50)
         let exitBtnFrame = CGRectMake(self.view.bounds.size.width - 50, 20, 50, 50)
+        let workCounterFrame = CGRectMake(0, self.view.bounds.size.height - 90, self.view.bounds.size.width / 2 - 0.5, 100)
+        let breaksCounterFrame = CGRectMake(self.view.bounds.size.width / 2 + 0.5, self.view.bounds.size.height - 90, self.view.bounds.size.width / 2 - 0.5, 100)
         
         
         // Add the counter
@@ -81,6 +83,13 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         exitButton.addTarget(self, action: "exitButtonAction:", forControlEvents: UIControlEvents.TouchUpInside)
         self.view.addSubview(exitButton)
         
+        // Add the period counters
+        let workCounter = PastPeriodsView(frame: workCounterFrame, labelText: "Work Periods")
+        self.view.addSubview(workCounter)
+        
+        let breaksCounter = PastPeriodsView(frame: breaksCounterFrame, labelText: "Break Periods")
+        self.view.addSubview(breaksCounter)
+        
         // Setup Icons for the sidebar
         let startIcon = FAKIonIcons.playIconWithSize(70.0)
         let pauseIcon = FAKIonIcons.pauseIconWithSize(70.0)
@@ -112,14 +121,15 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         switch index{
         case 0:
             self.progView.resume()
+            self.sideMenu.dismiss()
         case 1:
             self.progView.stop()
+            self.sideMenu.dismiss()
         case 2:
             self.progView.reset()
-        case 3:
-            println("Settings")
+            self.sideMenu.dismiss()
         default:
-            println("Nothing to see here")
+            break
         }
     }
         
