@@ -24,7 +24,7 @@ class PastPeriodsView: UIView {
         let counterLabelFrame = CGRectMake(0, 5, frame.width, 30)
         
         // Set background color
-        self.backgroundColor = UIColor(red: 0.76, green: 0.83, blue: 0.95, alpha: 1.0)
+        self.backgroundColor = UIColor(red: 0.95, green: 0.69, blue: 0.69, alpha: 1.0)
         
         // Add counter bar
         let prog = M13ProgressViewSegmentedBar(frame: progFrame)

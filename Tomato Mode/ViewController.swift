@@ -6,7 +6,6 @@
 //  Copyright (c) 2014 Oz Tamir. All rights reserved.
 //
 
-// TODO: Rename this file to 'TimerViewController'
 
 import Foundation
 import UIKit
@@ -14,9 +13,7 @@ import QuartzCore
 
 class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFrostedSidebarDelegate  {
     
-    var screenHeight: CGFloat = 0
     var progView: SFRoundProgressCounterView!
-    var remainLabel: UILabel!
     var sideMenu: RNFrostedSidebar!
     
     init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: NSBundle?) {
@@ -27,17 +24,10 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.screenHeight = UIScreen.mainScreen().bounds.height
         
-        // Set gradient Backgorund
-        // TODO: Choose a final background and add ability to change it
-        let firstColor = UIColor(red: 0.85, green: 0.94, blue: 0.91, alpha: 1)
-        let secondColor = UIColor(red: 0.84, green: 0.95, blue: 0.95, alpha: 1)
-        
-        var gradient = CAGradientLayer()
-        gradient.colors = [firstColor.CGColor, secondColor.CGColor]
-        gradient.frame = self.view.bounds
-        self.view.layer.insertSublayer(gradient, atIndex: 0)
+        // Set Backgorund Color
+        // TODO: Add ability to change the background
+        self.view.backgroundColor = UIColor(red: 0.91, green: 0.36, blue: 0.35, alpha: 1.0)
         
         // Setup frames for each subview
         let progFrame = CGRectMake(50.0, self.view.bounds.size.height / 4 , self.view.bounds.size.width - 100, self.view.bounds.size.width - 100)
@@ -55,15 +45,6 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         progView.intervals = [interval]
         self.progView = progView
         self.view.addSubview(self.progView)
-        
-        // Add the time label
-        let remainLabel = UILabel(frame: remainingFrame)
-        remainLabel.backgroundColor = UIColor.clearColor()
-        remainLabel.text = "0 : 00"
-        remainLabel.textAlignment = NSTextAlignment.Center
-        remainLabel.font = UIFont(name: "HelveticaNeue-Light", size: 46)
-        self.remainLabel = remainLabel
-        self.view.addSubview(self.remainLabel)
         
         // Add menu button
         let menuButtonIcon = FAKIonIcons.naviconRoundIconWithSize(35.0)
@@ -121,16 +102,14 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         switch index{
         case 0:
             self.progView.resume()
-            self.sideMenu.dismiss()
         case 1:
             self.progView.stop()
-            self.sideMenu.dismiss()
         case 2:
             self.progView.reset()
-            self.sideMenu.dismiss()
         default:
             break
         }
+        self.sideMenu.dismiss()
     }
-        
+    
 }
