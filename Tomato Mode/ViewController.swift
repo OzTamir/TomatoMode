@@ -41,8 +41,13 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
         // Add the counter
         let progView = SFRoundProgressCounterView(frame: progFrame)
         progView.delegate = self
-        var interval = 25.0 * 60000
+        var interval = 1.0 * 60000
         progView.intervals = [interval]
+        progView.outerCircleThickness = 10.0
+        progView.outerProgressColor = UIColor(red: 0.91, green: 0.36, blue: 0.35, alpha: 1.0)
+        progView.outerTrackColor = UIColor(red: 0.71, green: 0.96, blue: 0.71, alpha: 1.0)
+        // TODO: Start the counter or otherwise it won't show progress
+        
         self.progView = progView
         self.view.addSubview(self.progView)
         
@@ -101,7 +106,7 @@ class ViewController: UIViewController, SFRoundProgressCounterViewDelegate, RNFr
     func sidebar(sidebar: RNFrostedSidebar!, didTapItemAtIndex index: Int){
         switch index{
         case 0:
-            self.progView.resume()
+            self.progView.start()
         case 1:
             self.progView.stop()
         case 2:

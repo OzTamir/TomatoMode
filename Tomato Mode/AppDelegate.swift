@@ -21,6 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TODO: Change the root view controller
         self.window!.rootViewController = ViewController(nibName: nil, bundle: nil)
         self.window!.backgroundColor = UIColor.whiteColor()
+        self.window!.tintColor = UIColor(red: 0.95, green: 0.63, blue: 0.63, alpha: 1.0)
         self.window!.makeKeyAndVisible()
         return true
     }
